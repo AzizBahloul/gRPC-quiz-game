@@ -1,7 +1,7 @@
-# Compiled class file
+# Compiled class files
 *.class
 
-# Log file
+# Log files
 *.log
 
 # BlueJ files
@@ -10,7 +10,16 @@
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
-# Package Files #
+# Maven build directories
+/target/
+
+# Maven wrapper
+.mvn/
+
+# Maven settings
+.settings/
+
+# Package files
 *.jar
 *.war
 *.nar
@@ -19,6 +28,36 @@
 *.tar.gz
 *.rar
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+# Virtual machine crash logs
 hs_err_pid*
 replay_pid*
+
+# VS Code specific files
+.vscode/
+
+# IntelliJ IDEA specific files (in case you switch IDEs)
+.idea/
+
+# Eclipse project files
+.project
+.classpath
+
+# Gradle wrapper
+.gradle/
+build/
+
+# OS-specific files
+.DS_Store  # macOS
+Thumbs.db  # Windows
+
+# gRPC generated code
+# Ignoring gRPC-generated files (from .proto files)
+**/src/main/java/com/example/grpc/**/*.java
+**/src/main/java/com/example/grpc/**/*.class
+
+# Protobuf files (to avoid committing generated .proto files)
+**/*.proto
+
+# gRPC specific temp files (if any)
+**/*.out
+**/*.log
